@@ -1,0 +1,17 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: codeblue-ingress  # base name, will be prefixed
+spec:
+  rules:
+    - host: teachapp.aidotech.in
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: codeblue-service
+                port:
+                  number: 8080

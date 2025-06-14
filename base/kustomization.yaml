@@ -1,0 +1,13 @@
+# kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
+labels:
+  - pairs:
+      owner: codeblue
+      app: codeblueapp
+    includeSelectors: true 
+    includeTemplates: true

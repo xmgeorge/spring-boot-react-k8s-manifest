@@ -1,0 +1,24 @@
+# kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+
+namePrefix: dev-codeblue-
+
+namespace: codeblue
+
+patches:
+  - path: patch-ingress.yaml
+    target:
+      kind: Ingress
+      name: codeblue-ingress
+  - path: patch-deployment.yaml
+    target:
+      kind: Deployment
+      name: codeblue-deployment
+
+images:
+  - name: codeblue
+    newName: 774305572856.dkr.ecr.us-east-1.amazonaws.com/codebule-dev-ecr-image
+    newTag: v1.0.1-9367d6c

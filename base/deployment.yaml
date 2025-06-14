@@ -1,0 +1,20 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: codeblue-web
+  template:
+    metadata:
+      labels:
+        app: codeblue-web
+    spec:
+      containers:
+        - name: codeblue_web
+          image: codeblue:latest
+          ports:
+            - containerPort: 8080
