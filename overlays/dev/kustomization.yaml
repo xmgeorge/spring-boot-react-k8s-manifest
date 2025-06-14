@@ -21,4 +21,4 @@ patches:
 images:
   - name: codeblue
     newName: 774305572856.dkr.ecr.us-east-1.amazonaws.com/codebule-dev-ecr-image
-    newTag: v1.0.1-9367d6c
+    newTag: df2fbe5
