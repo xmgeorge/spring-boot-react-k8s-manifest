@@ -20,7 +20,7 @@ spec:
             - containerPort: 8080
           livenessProbe:
               httpGet:
-                path: /login
+                path: /
                 port: 8080
                 httpHeaders:
                   - name: Header-From-Pod
