@@ -12,11 +12,11 @@ patches:
   - path: patch-ingress.yaml
     target:
       kind: Ingress
-      name: codeblue-ingress
+      name: ingress
   - path: patch-deployment.yaml
     target:
       kind: Deployment
-      name: codeblue-deployment
+      name: deployment
 
 images:
   - name: codeblue

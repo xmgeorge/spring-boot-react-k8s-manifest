@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: teacher-deployment
+  name: deployment
 spec:
   template:
     spec:

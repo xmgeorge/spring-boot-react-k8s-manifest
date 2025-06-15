@@ -5,7 +5,7 @@ metadata:
   name: service
 spec:
   selector:
-    app: codeblue
+    app: codeblue-web
   ports:
     - protocol: TCP
       port: 8080
