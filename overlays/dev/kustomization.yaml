@@ -13,10 +13,6 @@ patches:
     target:
       kind: Ingress
       name: ingress
-  - path: patch-deployment.yaml
-    target:
-      kind: Deployment
-      name: deployment
 
 images:
   - name: codeblue
