@@ -5,7 +5,7 @@ metadata:
   name: codeblue-ingress  # base name, will be prefixed
 spec:
   rules:
-    - host: teachapp.aidotech.in
+    - host: codeblue.georgeulahannan.live
       http:
         paths:
           - path: /
