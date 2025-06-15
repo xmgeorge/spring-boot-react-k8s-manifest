@@ -16,5 +16,5 @@ patches:
 
 images:
   - name: codeblue
-    newName: jmalloc/echo-server
-    # newTag: latest
+    newName: 774305572856.dkr.ecr.us-east-1.amazonaws.com/codebule-dev-ecr-image
+    newTag: caf6198
