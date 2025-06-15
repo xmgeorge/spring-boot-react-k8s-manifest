@@ -14,7 +14,7 @@ spec:
         app: codeblue-web
     spec:
       containers:
-        - name: codeblue_web
+        - name: codeblue-web
           image: codeblue:latest
           ports:
             - containerPort: 8080
