@@ -5,6 +5,8 @@ resources:
   - deployment.yaml
   - service.yaml
   - ingress.yaml
+  - namespace.yaml
+
 labels:
   - pairs:
       owner: codeblue
